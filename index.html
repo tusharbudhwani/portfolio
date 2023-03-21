@@ -19,11 +19,10 @@
 
 <body>
     <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></a>
-
     <div class="entire-page overflow-hidden">
         <!-- Navbar -->
-        <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary nav-top text-white w-100"
-            data-bs-theme="dark" style="padding: 0%; margin: 0%;">
+        <nav class="navbar bg-dark fixed-top navbar-expand-lg bg-body-tertiary nav-top text-white" data-bs-theme="dark"
+            style="padding: 0%; margin: 0%;">
             <div class="container-fluid">
                 <a class="navbar-brand"> <img src="assets/img/tb_logo_no_bg.png" height="80" alt="tb_logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,23 +31,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class=" navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#profile">PROFILE</a>
-                        <a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
-                        <a class="nav-link active" aria-current="page" href="#contact">SOCIAL</a>
-                        <a class="nav-link" href="mailto:tusharbudhwani@gmail.com"><i class="fa-solid fa-envelope"
-                                style="color: white; font-size: 18px;" title="tusharbudhwani@gmail.com"></i></a>
-                        <a class="nav-link" href="tel:+917039460876"><i class="fa-solid fa-phone"
+                    <div class="navbar-nav">
+                        <a class="nav-link active me-2" aria-current="page" href="#profile">PROFILE</a>
+                        <a class="nav-link active me-2" aria-current="page" href="#about">ABOUT</a>
+                        <a href="#music" class="nav-link active me-2" aria-current="page">MY MUSIC</a>
+                        <a class="nav-link active me-2" aria-current="page" href="#contact">SOCIAL</a>
+                        <a href="assets/cv/tushar_budhwani_cv.pdf" class="nav-link active me-3">RESUME <i
+                                class="fa-solid fa-download" style="color: white; font-size: 18px;"
+                                title="Download CV"></i></a>
+                        <a class="nav-link me-3" href="tel:+917039460876"><i class="fa-solid fa-phone"
                                 style="color: white; font-size: 18px;" title="+91 70394 60876"></i></a>
-                        <a href="assets/cv/tushar_budhwani_cv.pdf" class="nav-link"><i class="fa-solid fa-file"
-                                style="color: white; font-size: 18px;" title="Download CV"></i></a>
+                        <a class="nav-link me-3" href="mailto:tusharbudhwani@gmail.com"><i class="fa-solid fa-envelope"
+                                style="color: white; font-size: 18px;" title="tusharbudhwani@gmail.com"></i></a>
 
                     </div>
                 </div>
             </div>
         </nav>
         <!-- Body below navbar -->
-        <div class="below-navbar-body">
+        <div class="below-navbar-body" style="margin-top: 100px;">
 
 
             <!-- Profile section -->
@@ -56,32 +57,28 @@
                 <div class="my-content">
 
                     <!-- Introduction  -->
-                    <div class="card p-4 shadow mb-5 card-bg">
-                        <div class="container p-0" style="display: flex;">
-                            <div class="" style="display: flex; margin: auto;">
-                                <img src="assets/img/tusharbudhwani_2no_bg.png" class="img-tb mb-4" style="align-content: center;" alt="Tushar">
-                            </div>
+                    <div class="card p-4 shadow mb-5 card-bg d-flex flex-row flex-wrap justify-content-evenly">
+                        <div class="p-0" style="display: flex;">
+
+                            <img src="assets/img/tusharbudhwani_2no_bg.png" class="img-tb mb-4"
+                                style="align-content: center;" alt="Tushar">
+
                         </div>
-                        <div class="row">
-                            <div class="col-12" style="display: flex;">
-                                <div class="container" style="display: flex;">
-    
-                                    <div class="bottom" style="margin: auto;">
-                                        <p class="h1 card-title" style="min-width: 400px; margin: auto;">Hi, <br> I am Tushar
-                                            Budhwani</p>
-                                        <!-- <p class="h5 text-black-50 w-75" style="min-width: 400px; margin: auto;">
+
+
+
+                        <div style="display: flex;">
+
+                            <p class="h1 card-title" style="margin: auto; font-size: 45px; text-shadow: 2px 3px 8px rgba(59,59,59,0.3);">Hi, <br>
+                                I am Tushar Budhwani</p>
+                            <!-- <p>
                                             I am a Computer Engineering student, passionate about Artificial Intelligence
                                             and
                                             Cryptography.
                                             <br>
                                             I also love singing and producing music.
                                         </p> -->
-                                    </div>
-                                </div>
-    
-                            </div>
                         </div>
-
 
                     </div>
 
@@ -93,54 +90,57 @@
                             <p class="h3">EDUCATION</p>
                             <div class="container w-100 mb-4">
 
-                                <div class="row">
-                                    <div class="col-12 mb-1">
-                                        <p class="h6 m-0">
-                                            University of Mumbai | CGPA: 9.25 / 10
-                                            <br>
-                                            <i class="m-0 text-black-50">Bachelor of Engineering in Computer
-                                                Engineering</i>
-                                        </p>
-                                        <p class="text-end"> May 2023</p>
-                                    </div>
+
+                                <div class="d-flex flex-row flex-wrap justify-content-between">
+                                    <p class="h6 m-0">
+                                        University of Mumbai | CGPA: 9.25 / 10
+                                        <br>
+                                        <i class="m-0 text-black-50">Bachelor of Engineering in Computer
+                                            Engineering</i>
+                                    </p>
+                                    <p class="text-end"> May 2023</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-12 mb-1">
-                                        <p class="h6 m-0">
-                                            Jai Hind College | 70.1% | Computer Science - 188 / 200
-                                            <br>
-                                            <i class="m-0 text-black-50">Higher Secondary Certificate (HSC)</i>
-                                        <p class="text-end"> Apr 2019</p>
-                                        </p>
-                                    </div>
+
+
+                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2">
+                                    <p class="h6">
+                                        Jai Hind College | 70.1% | Computer Science - 188 / 200
+                                        <br>
+                                        <i class="text-black-50">Higher Secondary Certificate (HSC)</i>
+                                    </p>
+                                    <p class="text-end"> Apr 2019</p>
                                 </div>
+
                             </div>
 
                             <!-- PROFESSIONAL EXPERIENCE -->
                             <p class="h3">PROFESSIONAL EXPERIENCE</p>
                             <div class="container w-100">
 
-                                <div class="row">
-                                    <div class="col-sm-12 mb-4">
-                                        <p class="h6 m-0">
-                                            <a
-                                                href="assets/certificates/Tushar_Budhwani_Infovue_Internship_Certificate.pdf">
-                                                Adore India (Infovue Solutions)</a> | Web Development Intern
-                                            <i class="m-0 text-black-50">
-                                                <ul style="text-align: justify;">
-                                                    <li>Designed and developed a Project Management System to track,
-                                                        manage and plan tasks efficiently.</li>
-                                                    <li>Led development of website migration project from wordpress to
-                                                        core PHP along with adding new functionalities.</li>
-                                                    <li>Designed rich UI/UX layouts, improved the performance of
-                                                        existing web application and fixed UI bugs and defects.</li>
-                                                    <li>Technologies used: PHP, HTML, CSS, JS, Bootstrap, WordPress,
-                                                        Git.</li>
-                                                </ul>
-                                            </i>
+                                <div>
+                                    <div class="d-flex flex-row flex-wrap justify-content-between">
+                                        <div class="normal w-75">
+                                            <p class="h6 m-0">
+                                                <a
+                                                    href="assets/certificates/Tushar_Budhwani_Infovue_Internship_Certificate.pdf">
+                                                    Adore India (Infovue Solutions)</a> | Web Development Intern
+                                                <i class="m-0 text-black-50">
+                                                    <ul style="text-align: justify;">
+                                                        <li>Designed and developed a Project Management System to track,
+                                                            manage and plan tasks efficiently.</li>
+                                                        <li>Led development of website migration project from wordpress
+                                                            to
+                                                            core PHP along with adding new functionalities.</li>
+                                                        <li>Designed rich UI/UX layouts, improved the performance of
+                                                            existing web application and fixed UI bugs and defects.</li>
+                                                        <li>Technologies used: PHP, HTML, CSS, JS, Bootstrap, WordPress,
+                                                            Git.</li>
+                                                    </ul>
+                                                </i>
+                                            </p>
+                                        </div>
                                         <p class="text-end"> Aug 2021 - Jan 2022</p>
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -148,8 +148,8 @@
                             <p class="h3">PROJECTS</p>
                             <div class="container w-100">
 
-                                <div class="row">
-                                    <div class="col-sm-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between">
+                                    <div class="normal w-75">
                                         <p class="h6 m-0">
                                             Predictal - Final Year Project (Ongoing)
                                             <i class="m-0 text-black-50">
@@ -164,13 +164,13 @@
                                                     </li>
                                                 </ul>
                                             </i>
-                                        <p class="text-end">Aug 2022 - Present</p>
                                         </p>
                                     </div>
+                                    <p class="text-end">Aug 2022 - Present</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-sm-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between">
+                                    <div class="normal w-75">
                                         <p class="h6 m-0">
                                             <a href="https://github.com/avinashdengani/TSEC-Hacks-2022-SystemZombies">
                                                 CodeMate</a> (Hackathon Project)
@@ -188,13 +188,13 @@
                                                         Bootstrap.</li>
                                                 </ul>
                                             </i>
-                                        <p class="text-end"> Mar 2022</p>
                                         </p>
                                     </div>
+                                    <p class="text-end"> Mar 2022</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-sm-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between">
+                                    <div class="normal w-75">
                                         <p class="h6 m-0">
                                             <a href="https://github.com/tusharbudhwani/foodie"> FOODIE</a> (Hackathon
                                             Project)
@@ -206,13 +206,13 @@
                                                         Bootstrap</li>
                                                 </ul>
                                             </i>
-                                        <p class="text-end"> Jan 2022</p>
                                         </p>
                                     </div>
+                                    <p class="text-end"> Jan 2022</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-sm-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between">
+                                    <div class="normal w-75">
                                         <p class="h6 m-0">
                                             Resume Builder Website
                                             <i class="m-0 text-black-50">
@@ -224,9 +224,9 @@
                                                     <li>Technologies used: HTML/CSS, JavaScript, Django, FaunaDB</li>
                                                 </ul>
                                             </i>
-                                        <p class="text-end"> May 2021</p>
                                         </p>
                                     </div>
+                                    <p class="text-end"> May 2021</p>
                                 </div>
 
                             </div>
@@ -259,8 +259,8 @@
                             <p class="h3">LEADERSHIP / EXTRA-CURRICULAR ACTIVITIES</p>
                             <div class="container w-100 mb-4">
 
-                                <div class="row">
-                                    <div class="col-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between">
+                                    <div>
                                         <p class="h6 m-0">
                                             <a href="assets/certificates/NSS_Tushar_Budhwani.pdf">
                                                 Technical Head </a> at National Service Scheme (NSS) – TSEC, University
@@ -269,12 +269,12 @@
                                             <i class="m-0 text-black-50">Organized over 80 community service events
                                                 including Blood Donation Drives, Cleanup Drives, etc.</i>
                                         </p>
-                                        <p class="text-end"> Sep 2021 - Jun 2022</p>
                                     </div>
+                                    <p class="text-end"> Sep 2021 - Jun 2022</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2">
+                                    <div>
                                         <p class="h6 m-0">
                                             <a href="assets/certificates/Rotaract Club_81.pdf">General Body Member</a>
                                             at Rotaract Club - TSEC, University of Mumbai
@@ -282,60 +282,60 @@
                                             <i class="m-0 text-black-50">Volunteered at various Medical camps,
                                                 Fundraising, and charity events.</i>
                                         </p>
-                                        <p class="text-end">Aug 2021 - May 2022</p>
                                     </div>
+                                    <p class="text-end">Aug 2021 - May 2022</p>
                                 </div>
                             </div>
 
                             <p class="h3">AWARDS & ACHIEVEMENTS</p>
                             <div class="container w-100 mb-4">
 
-                                <div class="row">
-                                    <div class="col-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between">
+                                    <div>
                                         <p class="h6 m-0">
-                                            LEADERSHIP AWARD – TSEC, University of Mumbai
+                                            LEADERSHIP AWARD - TSEC, University of Mumbai
                                             <br>
                                             <i class="m-0 text-black-50">- for displaying prolific Leadership and
                                                 Managerial skills</i>
                                         </p>
-                                        <p class="text-end"> Mar 2023</p>
                                     </div>
+                                    <p class="text-end"> Mar 2023</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2">
+                                    <div>
                                         <p class="h6 m-0">
                                             Best Instrument Award
                                             <br>
                                             <i class="m-0 text-black-50"> @Jashan 2020 fest organized by R. D. National
                                                 College</i>
                                         </p>
-                                        <p class="text-end"> Dec 2020</p>
                                     </div>
+                                    <p class="text-end"> Dec 2020</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2">
+                                    <div>
                                         <p class="h6 m-0">
                                             3rd Place in Solo Singing Award
                                             <br>
                                             <i class="m-0 text-black-50"> @Jashan 2020 fest organized by R. D. National
                                                 College</i>
                                         </p>
-                                        <p class="text-end"> Dec 2020</p>
                                     </div>
+                                    <p class="text-end"> Dec 2020</p>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-12 mb-4">
+                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2">
+                                    <div>
                                         <p class="h6 m-0">
                                             1rd Place in Solo Singing Award
                                             <br>
                                             <i class="m-0 text-black-50"> @Tarang Radio 90.4 FM Competition organized at
                                                 Jai Hind College</i>
                                         </p>
-                                        <p class="h6 text-end minimum"> Dec 2017</p>
                                     </div>
+                                    <p class="h6 text-end"> Dec 2017</p>
                                 </div>
 
                             </div>
@@ -360,22 +360,7 @@
                         <div class="card-body">
                             <p class="h1 text-center" id="about">ABOUT ME</p>
                             <p style="margin: 0% !important;">
-                                When ‘Rolling Stone’ - the world’s biggest music magazine featured my song, it
-                                felt like
-                                a dream
-                                came true. Six years of creating music and using software applications for music
-                                production have
-                                made me realize how evolving technology and Artificial Intelligence have
-                                transformed the
-                                way
-                                creativity can be expressed.
-                                I wish to work with leading tech companies and contribute to developing
-                                revolutionary software products. In the long run, I aspire to pursue
-                                entrepreneurship
-                                and design
-                                impactful software solutions for tomorrow’s business needs.
-                                <br>
-                                <br>
+
                                 As an individual, I have always believed in having conceptual clarity and strong
                                 fundamentals
                                 which helped me secure a GPA of 9.25/10. While the core courses in my
@@ -430,7 +415,7 @@
                                 Besides academics, I actively participated in hackathons and coding
                                 competitions. One of
                                 my
-                                Hackathon projects named ‘Codemate’ finished in the top 10 out of over 120
+                                Hackathon projects named 'Codemate' finished in the top 10 out of over 120
                                 participating
                                 teams.
                                 The project aimed at creating a collaboration and networking platform for coders
@@ -469,62 +454,161 @@
                                 significantly to community service but also sharpened various skills, including
                                 leadership, time
                                 management, and communication.
+                                <br>
+                                <br>
+                                I wish to work with leading tech companies and contribute to developing
+                                revolutionary software products. In the long run, I aspire to pursue
+                                entrepreneurship
+                                and design
+                                impactful software solutions for tomorrow's business needs.
                             </p>
                         </div>
                     </div>
 
+                    <!-- Content section -->
+                    <div class="card p-4 shadow mt-5 mb-5 card-bg">
 
+                        <div class="card-body">
+                            <p class="h1 text-center" id="music">MY MUSIC</p>
+
+                            <div>
+                                <p style="text-align: justify;">
+                                    When 'Rolling Stone' - the world's biggest music magazine <a
+                                        href="https://rollingstoneindia.com/rsdailymusic-heres-what-were-listening-to-today-197/">featured</a>
+                                    my song, it felt like a dream
+                                    came true. Six years of creating music and using software applications for music
+                                    production have
+                                    made me realize how evolving technology and Artificial Intelligence have
+                                    transformed the
+                                    way
+                                    creativity can be expressed.
+                                </p>
+                            </div>
+
+                            <div class="container d-flex flex-row flex-wrap justify-content-md-evenly">
+                                <div>
+                                    <div style="margin: auto;">
+                                        <iframe class="mb-1" style="margin: auto;" width="300" height="190"
+                                            src="https://www.youtube.com/embed/hHog8GeF5Kw" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <p style="width: 300px; text-align: justify;">
+                                            Collaboration with one of the best violinists in India Mr. <a
+                                                href="https://www.instagram.com/shravansridhar/">Shravan Sridhar</a>
+                                            It was fun to put through my Electronic music production skills in
+                                            making this track to hold such beautiful violins on top of it.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div style="margin: auto;">
+                                        <iframe class="mb-1" style="margin: auto;" width="300" height="190"
+                                            src="https://www.youtube.com/embed/mrbwJcoJppA" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <p style="width: 300px; text-align: justify;">
+                                            Created a cover of one of the most soulful bollywood songs 'Ranja' with
+                                            my brother <a href="https://www.youtube.com/@MohitBudhwani">Mohit
+                                                Budhwani</a> on my Music YouTube Channel with <a
+                                                href="https://www.instagram.com/ektapariani/">Ekta Pariani</a>.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div style="margin: auto;">
+                                        <iframe class="mb-1" style="margin: auto;" width="300" height="190"
+                                            src="https://www.youtube.com/embed/mJhqSAGVp0g" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <p style="width: 300px; text-align: justify;">
+                                            Created a cover of the song 'Kho Gaye Hum Kahaan' with my own Cinematic
+                                            and Electronic twist to it.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <div style="margin: auto;">
+                                        <iframe class="mb-1" style="margin: auto;" width="320" height="190"
+                                            src="https://www.youtube.com/embed/B5TSnXl7HaY" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <p style="width: 300px; text-align: justify;">
+                                            The time when my brother <a
+                                                href="https://www.youtube.com/@MohitBudhwani">Mohit Budhwani</a>
+                                            invited me on stage during his Bachelor Year performance.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
 
-                <nav class="navbar bg-dark justify-content-center bottombar">
-
-
-                    <div class="my-content" id="contact">
-
-                        <a href="https://github.com/tusharbudhwani"><i class="fa-brands fa-github brands"></i></a>
-                        <a href="https://www.linkedin.com/in/tusharbudhwani/"><i
-                                class="fa-brands fa-linkedin-in brands"></i></a>
-                        <a href="https://www.youtube.com/@entmusic_"><i class="fa-brands fa-youtube brands"></i></a>
-                        <a href="https://www.instagram.com/tusharbudhwani/"><i
-                                class="fa-brands fa-instagram brands"></i></a>
-                        <a href="https://www.facebook.com/tushar.budhwani/"><i
-                                class="fa-brands fa-facebook brands"></i></a>
-                        <a href="mailto:tusharbudhwani@gmail.com"><i class="fa-solid fa-envelope brands"></i></a>
-                        <a href="tel:+917039460876"><i class="fa-solid fa-phone brands"></i></a>
-
-
-                    </div>
-                </nav>
             </div>
         </div>
-        <script>
-            // Get the button
-            let mybutton = document.getElementById("myBtn");
 
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () { scrollFunction() };
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
+    </div>
+
+
+    <nav class="navbar bg-dark justify-content-center bottombar">
+
+
+        <div class="my-content" id="contact">
+
+            <a href="https://github.com/tusharbudhwani"><i class="fa-brands fa-github brands"></i></a>
+            <a href="https://www.linkedin.com/in/tusharbudhwani/"><i class="fa-brands fa-linkedin-in brands"></i></a>
+            <a href="https://www.youtube.com/@entmusic_"><i class="fa-brands fa-youtube brands"></i></a>
+            <a href="https://www.instagram.com/tusharbudhwani/"><i class="fa-brands fa-instagram brands"></i></a>
+            <a href="https://www.facebook.com/tushar.budhwani/"><i class="fa-brands fa-facebook brands"></i></a>
+            <a href="mailto:tusharbudhwani@gmail.com"><i class="fa-solid fa-envelope brands"></i></a>
+            <a href="tel:+917039460876"><i class="fa-solid fa-phone brands"></i></a>
+
+
+        </div>
+    </nav>
+    </div>
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
             }
+        }
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
-            integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+        integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
