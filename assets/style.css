@@ -136,14 +136,14 @@ border-radius: 3px;
 
 @media only screen and (min-width: 576px) {
   .my-content{
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .my-content{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
   }
 }
