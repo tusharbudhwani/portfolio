@@ -157,6 +157,6 @@ border-radius: 3px;
 
 .card:hover{
   box-shadow: 2px 3px 15px rgba(59,59,59,0.5) !important;
-  scale: 1.02;
+  /* scale: 1.02; */
   transition-duration: 1000ms;
 }
