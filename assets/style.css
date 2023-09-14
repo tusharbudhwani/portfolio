@@ -28,9 +28,10 @@ a{
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  /* background: rgb(63, 63, 63);  */
-  background: rgb(88,163,160);
-background: linear-gradient(0deg, rgba(88,163,160,1) 0%, rgba(33,33,33,1) 30%, rgba(33,33,33,1) 70%, rgba(40,150,146,1) 100%);
+  background: rgb(63, 63, 63); 
+  /* background: rgb(88,163,160); */
+/* background: linear-gradient(0deg, rgba(88,163,160,1) 0%, rgba(33,33,33,1) 30%, rgba(33,33,33,1) 70%, rgba(40,150,146,1) 100%); */
+/* background: black; */
 border-radius: 3px;
 }
 
