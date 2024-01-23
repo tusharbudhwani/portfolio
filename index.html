@@ -17,49 +17,56 @@
     <link rel="icon" href="assets/img/tb_logo_no_bg_cropped.png" type="image/icon type">
 </head>
 
-<body style="background-color: rgb(237, 255, 253);">
-    <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></a>
+<body>
+    <a onclick="topFunction()" id="myBtn" title="Go to top" class="bg-dark"><i class="fa-solid fa-angles-up"></i></a>
     <div class="entire-page overflow-hidden">
-        <nav class="navbar bg-dark fixed-top navbar-expand-lg bg-body-tertiary nav-top text-white" data-bs-theme="dark"
-            style="padding: 0%; margin: 0%;">
-            <div class="container-fluid">
+        <nav class="navbar bg-dark nav-top text-white" data-bs-theme="dark"
+            style="padding: 0%; margin: 0%; height: 120px;">
+            <div class="container-fluid justify-content-center">
                 <a class="navbar-brand"> <img src="assets/img/tb_logo_no_bg.png" height="80" alt="tb_logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <h3 class="mt-2">Tushar Budhwani</h3>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active me-2" aria-current="education" href="#education">EDUCATION</a>
-                        <a class="nav-link active me-2" aria-current="proficiencies" href="#proficiencies">PROFICIENCIES</a>
-                        <a class="nav-link active me-2" aria-current="skills" href="#skills">SKILLS</a>
-                        <a class="nav-link active me-2" aria-current="experience" href="#experience" >EXPERIENCE</a>
-                        <a class="nav-link active me-2" aria-current="projects" href="#projects">PROJECTS</a>
-                        <a class="nav-link active me-2" aria-current="publications" href="#publications">PUBLICATIONS</a>
-
-                        <a class="nav-link active me-2" aria-current="extra" href="#extra">EXTRA-CURRICULAR</a>
-                        <a class="nav-link active me-2" aria-current="awards" href="#awards">AWARDS</a>
-                        <!-- <a class="nav-link active me-2" aria-current="about" href="#about">ABOUT</a> -->
-                        <a class="nav-link active me-2" aria-current="music" href="#music">MY MUSIC</a>
-                        <a href="assets/cv/RESUME_TUSHAR_BUDHWANI.pdf" class="nav-link active me-3">RESUME <i
-                                class="fa-solid fa-download" style="color: white; font-size: 18px;"
-                                title="Download CV"></i></a>
-                        <a class="nav-link me-3" href="tel:+14134661132"><i class="fa-solid fa-phone"
-                                style="color: white; font-size: 18px;" title="+1 (413)-466-1132"></i></a>
-                        <a class="nav-link me-3" href="mailto:tusharbudhwani@gmail.com"><i class="fa-solid fa-envelope"
-                                style="color: white; font-size: 18px;" title="tusharbudhwani@gmail.com"></i></a>
 
                     </div>
                 </div>
             </div>
         </nav>
 
+        <!-- Me -->
+        <div class="bg-white below-navbar-body pt-5 pb-5" style="margin-top: 10px;">
+            <div id="me">
+                <div class="my-content p-2">
+                    <div class="row pt-5 w-100">
+
+                        <div class="col-md-5 col-12 text-center">
+                            <img style="width: 80%; border-radius: 50%; min-width: 200px;" src="assets/img/tushar.jpeg" alt="Tushar image">
+                        </div>
+                        <div class="col-md-7 col-12 pt-5 text-center">
+                            <i class="h2 text-start">Harmonizing code and creativity, I'm a Computer Science student
+                                orchestrating a symphony in the realms of Machine Learning and Data Engineering.</i>
+                            
+                            <div class="d-flex flex-row container-fluid justify-content-end mt-4">
+                                <a href="assets/cv/RESUME_TUSHAR_BUDHWANI.pdf" class="nav-link text-primary me-3 p-1" style="font-size: 25px;">Resume <i
+                                        class="fa-solid fa-download" title="Download CV"></i></a>
+                                <a class="me-3 p-1 text-success" href="tel:+14134661132" style="font-size: 25px;"><i class="fa-solid fa-phone"
+                                        title="+1 (413)-466-1132"></i></a>
+                                <a class="me-3 p-1 text-warning" href="mailto:tusharbudhwani@gmail.com" style="font-size: 28px;"><i
+                                        class="fa-solid fa-envelope" title="tusharbudhwani@gmail.com"></i></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Education -->
-        <div class="below-navbar-body" style="margin-top: 140px;">
-            <div class="profile" id="education">
+        <div class="bg-white below-navbar-body pt-5 pb-5">
+            <div class="bg-white profile" id="education">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="w-100 card p-1 shadow card-bg">
 
                         <div class="card-body">
                             <p class="h1 text-center">EDUCATION</p>
@@ -97,7 +104,7 @@
         <div class="below-navbar-body mt-5">
             <div class="profile" id="proficiencies">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="pt-5 pb-5">
 
                         <div class="card-body">
                             <p class="h1 text-center">CORE PROFICIENCIES AND INTERESTS</p>
@@ -174,7 +181,7 @@
         <div class="below-navbar-body mt-5">
             <div class="profile" id="experience">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="pt-5 pb-5">
 
                         <div class="card-body">
                             <p class="h1 text-center">PROFESSIONAL EXPERIENCE</p>
@@ -312,11 +319,11 @@
             </div>
         </div>
 
-         <!-- PUBLICATIONS -->
-         <div class="below-navbar-body mt-5">
+        <!-- PUBLICATIONS -->
+        <div class="below-navbar-body mt-5">
             <div class="profile" id="publications">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="pt-5 pb-5">
 
                         <div class="card-body">
                             <p class="h1 text-center">PUBLICATIONS</p>
@@ -328,12 +335,15 @@
 
                                     <p class="h6">
                                         Research Patent:
-                                        <a href="https://search.ipindia.gov.in/IPOJournal/Journal/Patent">Enhancement of Advanced Encryption Standard Algorithm to secure IoT devices. </a>
+                                        <a href="https://search.ipindia.gov.in/IPOJournal/Journal/Patent">Enhancement of
+                                            Advanced Encryption Standard Algorithm to secure IoT devices. </a>
                                     </p>
                                     <p class="text-end"> Aug 2022</p>
                                     <ul class="text-black-50">
-                                        <li> Indian Patent Application No. 202221045319 A, The Patent Office Journal No. 33/2022, Date of filing: Aug 8, 2022</li>
-                                        <li>Proposed a faster alternative to the AES algorithm for lower-powered IoT devices and real-time secure communications</li>
+                                        <li> Indian Patent Application No. 202221045319 A, The Patent Office Journal No.
+                                            33/2022, Date of filing: Aug 8, 2022</li>
+                                        <li>Proposed a faster alternative to the AES algorithm for lower-powered IoT
+                                            devices and real-time secure communications</li>
                                     </ul>
                                 </div>
 
@@ -342,11 +352,13 @@
 
                                     <p class="h6">
                                         Research Project:
-                                        <a href="http://proceeding.conferenceworld.in/UCET-2022/39.pdf">Offensive Web Application Security Framework </a> | ICETESM 
+                                        <a href="http://proceeding.conferenceworld.in/UCET-2022/39.pdf">Offensive Web
+                                            Application Security Framework </a> | ICETESM
                                     </p>
                                     <p class="text-end"> Feb 2022</p>
                                     <ul class="text-black-50">
-                                        <li>A framework to detect and evaluate existing vulnerabilities in web applications in real-time.</li>
+                                        <li>A framework to detect and evaluate existing vulnerabilities in web
+                                            applications in real-time.</li>
                                     </ul>
                                 </div>
 
@@ -404,7 +416,7 @@
         <div class="below-navbar-body mt-5">
             <div class="profile" id="awards">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="pt-5 pb-5">
 
                         <div class="card-body">
                             <p class="h1 text-center">AWARDS & ACHIEVEMENTS</p>
@@ -446,129 +458,6 @@
             </div>
         </div>
 
-        <!-- About me -->
-        <!-- <div class="below-navbar-body mt-5">
-            <div class="profile" id="about">
-                <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
-
-                        <div class="card-body">
-                            <p class="h1 text-center">ABOUT ME</p>
-
-                            <div class="container w-100 mb-2 mt-4">
-
-                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2">
-                                    <p style="margin: 0% !important;">
-
-                                        As an individual, I have always believed in having conceptual clarity and strong
-                                        fundamentals
-                                        which helped me secure a GPA of 9.25/10. While the core courses in my
-                                        undergraduate
-                                        curriculum, such
-                                        as Analysis of Algorithms, Operating
-                                        Systems, Object Oriented Programming, and Computer Networks helped me build a
-                                        perspective
-                                        and straightforward approach to problem-solving, electives and capstone courses
-                                        such as
-                                        Blockchain and Cloud Computing helped me understand modern world problems. I
-                                        enjoyed
-                                        rendering my theoretical understanding into projects and learned how to create
-                                        smart,
-                                        sustainable,
-                                        and scalable solutions using the latest tools and technologies.
-                                        <br> <br>
-                                        Currently, for the Final year project, I am building a service with multiple
-                                        predictive
-                                        Machine
-                                        Learning models bundled in
-                                        a web-based application to accomplish early diagnosis of fatal diseases like
-                                        heart
-                                        strokes, breast
-                                        cancer, etc. This project, being in the healthcare domain, helped me understand
-                                        the
-                                        importance of
-                                        reliable training data and preprocessing to achieve maximum accuracy. I learned
-                                        how to
-                                        process the
-                                        data using a variety of techniques, including the Chi-Square Test, and the Naive
-                                        Random
-                                        Oversampling Method.
-                                        <br> <br>
-                                        To gain exposure to the software industry, I
-                                        secured an internship as a Full Stack Developer at Adore India Pvt. Ltd.
-                                        (Infovue
-                                        Solutions) for a
-                                        period of five months. There, I assisted in developing a Project Management
-                                        System that
-                                        helps in
-                                        planning, tracking, and managing all the ongoing projects of the company, its
-                                        sub-tasks,
-                                        and the
-                                        employees working on them. I heavily worked on PHP, JavaScript, Ajax, Bootstrap,
-                                        and
-                                        Git. Owing to
-                                        my exceptional performance,
-                                        I was given an opportunity to lead a team of interns for
-                                        the subsequent project.
-                                        <br><br>
-                                        Besides academics, I actively participated in hackathons and coding
-                                        competitions. One of
-                                        my
-                                        Hackathon projects named 'Codemate' finished in the top 10 out of over 120
-                                        participating
-                                        teams.
-                                        The project aimed at creating a collaboration and networking platform for coders
-                                        and
-                                        research
-                                        enthusiasts where they can filter and find like-minded people based on their
-                                        skill sets.
-                                        Another
-                                        project that I built along with my team in a hackathon was an online tool for
-                                        managing
-                                        household
-                                        food and groceries. This online program tracks the expiry dates of food goods
-                                        and
-                                        assists in
-                                        managing food concerns such as food spills and grocery management issues in the
-                                        house to
-                                        decrease food waste. Projects like these taught me how to create an impact in
-                                        society using technology.
-                                        <br> <br>
-                                        Apart from these co-curricular endeavors, I have also given
-                                        extracurricular activities a profound inclination. In my third year of
-                                        undergraduate, I
-                                        served as a
-                                        Technical Head of the National Service Scheme (NSS) at the University which is a
-                                        community
-                                        service association affiliated with the Government of India. I was involved in
-                                        organizing over 80
-                                        social cause events during my tenure including Blood Donation Drives, Tree
-                                        Plantation
-                                        Drives,
-                                        Teaching underprivileged children at small settlements/villages, Breast Cancer
-                                        awareness
-                                        campaigns, and many more. Through my participation in these endeavors, I not
-                                        only
-                                        contributed
-                                        significantly to community service but also sharpened various skills, including
-                                        leadership, time
-                                        management, and communication.
-                                        <br>
-                                        <br>
-                                        I wish to work with leading tech companies and contribute to developing
-                                        revolutionary software products. In the long run, I aspire to pursue
-                                        entrepreneurship
-                                        and design
-                                        impactful software solutions for tomorrow's business needs.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <!-- My Music -->
         <div class="below-navbar-body mt-5 mb-5">
             <div class="profile" id="music">
@@ -599,12 +488,12 @@
                                     <div class="container d-flex flex-row flex-wrap justify-content-md-evenly">
                                         <div>
                                             <div style="margin: auto;">
-                                                <iframe class="mb-1" style="margin: auto;" width="330" height="190"
+                                                <iframe class="mb-1" style="margin: auto;" width="320" height="190"
                                                     src="https://www.youtube.com/embed/hHog8GeF5Kw"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen></iframe>
-                                                <p style="width: 330px; text-align: justify;">
+                                                <p style="width: 320px; text-align: justify;">
                                                     Collaboration with one of the best violinists in India Mr. <a
                                                         href="https://www.instagram.com/shravansridhar/">Shravan
                                                         Sridhar</a>
@@ -617,13 +506,13 @@
 
                                         <div>
                                             <div style="margin: auto;">
-                                                <iframe class="mb-1" style="margin: auto;" width="330" height="190"
+                                                <iframe class="mb-1" style="margin: auto;" width="320" height="190"
                                                     src="https://www.youtube.com/embed/mrbwJcoJppA"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen></iframe>
-                                                <p style="width: 330px; text-align: justify;">
-                                                    Created a cover of one of the most soulful bollywood songs 'Ranja'
+                                                <p style="width: 320px; text-align: justify;">
+                                                    Created a cover of one of the most soulful bollywood songs 'Ranjha'
                                                     with
                                                     my brother <a href="https://www.youtube.com/@MohitBudhwani">Mohit
                                                         Budhwani</a> on my Music YouTube Channel with <a
@@ -635,12 +524,12 @@
 
                                         <div>
                                             <div style="margin: auto;">
-                                                <iframe class="mb-1" style="margin: auto;" width="330" height="190"
+                                                <iframe class="mb-1" style="margin: auto;" width="320" height="190"
                                                     src="https://www.youtube.com/embed/mJhqSAGVp0g"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen></iframe>
-                                                <p style="width: 330px; text-align: justify;">
+                                                <p style="width: 320px; text-align: justify;">
                                                     Created a cover of the song 'Kho Gaye Hum Kahaan' with my own
                                                     Cinematic
                                                     and Electronic twist to it.
@@ -651,12 +540,12 @@
 
                                         <div>
                                             <div style="margin: auto;">
-                                                <iframe class="mb-1" style="margin: auto;" width="330" height="190"
+                                                <iframe class="mb-1" style="margin: auto;" width="320" height="190"
                                                     src="https://www.youtube.com/embed/B5TSnXl7HaY"
                                                     title="YouTube video player" frameborder="0"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                     allowfullscreen></iframe>
-                                                <p style="width: 330px; text-align: justify;">
+                                                <p style="width: 320px; text-align: justify;">
                                                     The time when my brother <a
                                                         href="https://www.youtube.com/@MohitBudhwani">Mohit
                                                         Budhwani</a>
@@ -675,7 +564,7 @@
         </div>
     </div>
 
-    <nav class="navbar bg-dark justify-content-center bottombar">
+    <nav class="navbar bg-dark justify-content-center bottombar" style="height: 150px;">
 
 
         <div class="d-flex flex-row flex-wrap justify-content-evenly" id="contact">

@@ -18,33 +18,6 @@ a{
   color: rgb(101, 46, 252);
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px grey; 
-  border-radius: 3px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(63, 63, 63); 
-  /* background: rgb(88,163,160); */
-/* background: linear-gradient(0deg, rgba(88,163,160,1) 0%, rgba(33,33,33,1) 30%, rgba(33,33,33,1) 70%, rgba(40,150,146,1) 100%); */
-/* background: black; */
-border-radius: 3px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(38, 38, 38); 
-}
-
-
-
 #myBtn {
     display: none;
     position: fixed;
@@ -54,7 +27,7 @@ border-radius: 3px;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(59,59,59,1);
+    /* background-color: rgba(59,59,59,1); */
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -62,7 +35,7 @@ border-radius: 3px;
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background-color: #555 !important;
   }
 
 .entire-page{
@@ -72,12 +45,12 @@ border-radius: 3px;
     
 }
 
-.nav-top{
+/* .nav-top{
     background: rgb(47,47,47);
     background: linear-gradient(360deg, rgba(59,59,59,1) 80%, rgba(40,150,146,1) 95%);
 
   box-shadow: 5px 5px 15px rgb(116, 116, 116);
-}
+} */
 
 .below-navbar-body{
     margin: 0%;
@@ -111,7 +84,7 @@ border-radius: 3px;
   
   .bottombar{
     /* background: rgb(47,47,47); */
-    background: linear-gradient(180deg, rgba(59,59,59,1) 75%, rgba(40,150,146,1) 95%);
+    /* background: linear-gradient(180deg, rgba(59,59,59,1) 75%, rgba(40,150,146,1) 95%); */
 }
 
 .card-bg{
@@ -162,8 +135,3 @@ border-radius: 3px;
   }
 }
 
-.card:hover{
-  box-shadow: 2px 3px 15px rgba(59,59,59,0.5) !important;
-  /* scale: 1.02; */
-  transition-duration: 1000ms;
-}
