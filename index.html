@@ -18,47 +18,44 @@
 </head>
 
 <body>
+    <button id="modeToggle" class="mode-toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      
     <a onclick="topFunction()" id="myBtn" title="Go to top" class="bg-dark"><i class="fa-solid fa-angles-up"></i></a>
     <div class="entire-page overflow-hidden">
-        <nav class="navbar bg-dark nav-top text-white" data-bs-theme="dark"
-            style="padding: 0%; margin: 0%; height: 120px;">
-            <div class="container-fluid justify-content-center">
+        <!-- <nav class="navbar nav-top text-white"
+            style="padding: 0%; margin: 0%;">
+            <div class="container-fluid justify-content-end">
                 <a class="navbar-brand"> <img src="assets/img/tb_logo_no_bg.png" height="80" alt="tb_logo"></a>
-                <h3 class="mt-2">Tushar Budhwani</h3>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-
-                    </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
         <!-- Me -->
-        <div class="bg-white below-navbar-body pt-5 pb-5" style="margin-top: 10px;">
-            <div id="me">
+        <div class="below-navbar-body pt-5" style="margin-top: 10px;">
+            <div id="me" class="below-navbar-body pt-5">
                 <div class="my-content p-2">
                     <div class="row pt-5 w-100">
-
                         <div class="col-md-5 col-12 text-center">
-                            <img style="width: 80%; border-radius: 50%; min-width: 200px;" src="assets/img/tushar.jpeg"
-                                alt="Tushar image">
+                            <img class="profile-image" src="assets/img/tushar.jpeg" alt="Tushar image">
                         </div>
-                        <div class="col-md-7 col-12 pt-5 text-center">
-                            <i class="h2 text-start">Harmonizing code and creativity, I'm a Computer Science student
-                                orchestrating a symphony in the realms of Machine Learning and Data Engineering.</i>
-
-                            <div class="d-flex flex-row container-fluid justify-content-end mt-4">
-                                <a href="RESUME_TUSHAR_BUDHWANI.pdf" class="nav-link text-primary me-3 p-1"
-                                    style="font-size: 25px;">Resume <i class="fa-solid fa-download"
-                                        title="Download CV"></i></a>
-                                <a class="me-3 p-1 text-success" href="tel:+14134661132" style="font-size: 25px;"><i
-                                        class="fa-solid fa-phone" title="+1 (413)-466-1132"></i></a>
-                                <a class="me-3 p-1 text-warning" href="mailto:tbudhwani@umass.edu"
-                                    style="font-size: 28px;"><i class="fa-solid fa-envelope"
-                                        title="tbudhwani@umass.edu"></i></a>
+                        <div class="col-md-7 col-12 pt-5 text-center text-md-end">
+                            <h1 class="name">Tushar Budhwani</h1>
+                            <p class="tagline">Harmonizing code and creativity, I'm a Computer Science student
+                                orchestrating a symphony in the realms of Data Science and Software Engineering.</p>
+                            <div class="contact-links">
+                                <a href="RESUME_TUSHAR_BUDHWANI.pdf" class="btn btn-primary">
+                                    <i class="fa-solid fa-download"></i> Resume
+                                </a>
+                                <a href="tel:+14134661132" class="btn btn-success">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                                <a href="mailto:tbudhwani@umass.edu" class="btn btn-warning">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -66,10 +63,10 @@
         </div>
 
         <!-- Education -->
-        <div class="bg-white below-navbar-body pt-5 pb-5">
-            <div class="bg-white profile" id="education">
+        <div class="below-navbar-body pb-5">
+            <div class="profile" id="education">
                 <div class="my-content">
-                    <div class="w-100 card p-1 shadow card-bg">
+                    <div class="w-100 p-1 shadow card-bg">
 
                         <div class="card-body">
                             <p class="h1 text-center">EDUCATION</p>
@@ -82,9 +79,11 @@
                                         GPA - 3.95 / 4.0
                                     </p>
                                     <p class="text-end"> Sep 2023 - May 2025</p>
-                                    <i class="text-black-50">- Courses Taken: Algorithms for Data Science, Machine Learning, Intelligent Visual
+                                    <i>- Courses Taken: Algorithms for Data Science, Machine Learning, Intelligent
+                                        Visual
                                         Computing, Information Retrieval, Software Engineering, Computer & Network
-                                        Security, Business Intelligence and Analytics, Data Science Fundamentals, Internet Law and Policy</i>
+                                        Security, Business Intelligence and Analytics, Data Science Fundamentals,
+                                        Internet Law and Policy</i>
                                 </div>
 
                                 <div class="d-flex flex-row flex-wrap justify-content-between mt-4">
@@ -93,7 +92,7 @@
                                         9.15 / 10.0
                                     </p>
                                     <p class="text-end">Aug 2019 - May 2023</p>
-                                    <i class="m-0 text-black-50">- Courses Taken: Machine Learning, Artificial
+                                    <i class="m-0 text">- Courses Taken: Machine Learning, Artificial
                                         Intelligence, Data Warehousing & Mining, Database Management</i>
                                 </div>
 
@@ -146,7 +145,7 @@
         <div class="below-navbar-body mt-5">
             <div class="profile" id="skills">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="p-1 shadow card-bg">
 
                         <div class="card-body">
                             <p class="h1 text-center">TECHNICAL SKILLS</p>
@@ -157,20 +156,25 @@
                                 <div class="d-flex flex-row flex-wrap justify-content-between mt-2">
                                     <table style="width: 100%;">
                                         <tr>
-                                            <td><b>Programming Languages & others: </b> Python, Java, C, C++, SQL, JavaScript, R, Git, GitHub </td>
+                                            <td><b>Programming Languages & others: </b> Python, Java, C, C++, SQL,
+                                                JavaScript, R, Git, GitHub </td>
                                         </tr>
                                         <tr></tr>
-                                            <td><b>Databases & Visualization Tools: </b> MySQL, PostgreSQL, Snowflake, Redshift, MongoDB, PowerBI, Tableau, Looker </td>
+                                        <td><b>Databases & Visualization Tools: </b> MySQL, PostgreSQL, Snowflake,
+                                            Redshift, MongoDB, PowerBI, Tableau, Looker </td>
                                         </tr>
                                         <tr>
-                                            <td><b>Full Stack Development: </b> Node.js, HTML/CSS, AJAX, Bootstrap, MySQL, JQuery, PHP, Laravel, Django, Flask </td>
+                                            <td><b>Full Stack Development: </b> Node.js, HTML/CSS, AJAX, Bootstrap,
+                                                MySQL, JQuery, PHP, Laravel, Django, Flask </td>
                                         </tr>
                                         <tr>
-                                            <td><b>Python Libraries: </b>NumPy, Pandas, Scikit-learn, NLTK, Matplotlib, TensorFlow, Keras, PyTorch, Seaborn
+                                            <td><b>Python Libraries: </b>NumPy, Pandas, Scikit-learn, NLTK, Matplotlib,
+                                                TensorFlow, Keras, PyTorch, Seaborn
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td><b>Cloud Platforms & DevOps: </b> AWS (SageMaker, EC2, S3, Lambda, Redshift, RDS, EKS), GCP (BigQuery, Vertex AI, Dataflow,
+                                            <td><b>Cloud Platforms & DevOps: </b> AWS (SageMaker, EC2, S3, Lambda,
+                                                Redshift, RDS, EKS), GCP (BigQuery, Vertex AI, Dataflow,
                                                 Cloud Functions), Docker, Kubernetes</td>
                                         </tr>
                                     </table>
@@ -200,23 +204,31 @@
                                         Full Stack Development Intern | Infovue Solutions Inc.
                                     </p>
                                     <p class="text-end"> Aug 2021 - Jan 2022</p>
-                                    <ul class="text-black-50">
-                                        <li>Integrated RESTful APIs with external payroll services and benefits providers as part of an HR automation project, significantly
-                                            improving data synchronization and reducing manual administrative tasks.</li>
-                                        <li>Led development of a MERN based internal employee portal to create a dynamic dashboard for HR and payroll data visualization.</li>
-                                        <li> Assisted in the migration of a legacy monolithic system to a containerized microservices architecture using Docker and Kubernetes,
+                                    <ul class="">
+                                        <li>Integrated RESTful APIs with external payroll services and benefits
+                                            providers as part of an HR automation project, significantly
+                                            improving data synchronization and reducing manual administrative tasks.
+                                        </li>
+                                        <li>Led development of a MERN based internal employee portal to create a dynamic
+                                            dashboard for HR and payroll data visualization.</li>
+                                        <li> Assisted in the migration of a legacy monolithic system to a containerized
+                                            microservices architecture using Docker and Kubernetes,
                                             ensuring scalability for 2x projected traffic growth.</li>
-                                        <li>Implemented horizontal scaling via AWS ECS by configuring auto-scaling policies and optimizing load balancing strategies,
-                                            enabling the platform to efficiently handle up to 1500 concurrent users with minimal latency and high availability.</li>
-                                        <li>Architected an advanced permission and role-based access control (RBAC) module, ensuring secure handling of sensitive employee
+                                        <li>Implemented horizontal scaling via AWS ECS by configuring auto-scaling
+                                            policies and optimizing load balancing strategies,
+                                            enabling the platform to efficiently handle up to 1500 concurrent users with
+                                            minimal latency and high availability.</li>
+                                        <li>Architected an advanced permission and role-based access control (RBAC)
+                                            module, ensuring secure handling of sensitive employee
                                             data and maintaining regulatory compliance.</li>
-                                        <li>Lowered cloud infrastructure costs by 20% through resource utilization analysis, right-sizing EC2 instances, and configuring
+                                        <li>Lowered cloud infrastructure costs by 20% through resource utilization
+                                            analysis, right-sizing EC2 instances, and configuring
                                             auto-scaling policies, reducing wasteful AWS spending.</li>
                                     </ul>
-                                    
+
                                 </div>
-                                <div class="text-black-50">
-                                    Technology: 
+                                <div class="">
+                                    Technology:
                                     <span class="badge text-bg-warning">MongoDB</span>
                                     <span class="badge text-bg-warning">Express.js</span>
                                     <span class="badge text-bg-warning">React.js</span>
@@ -238,9 +250,9 @@
                                     <span class="badge text-bg-warning">DataTables</span>
                                     <span class="badge text-bg-warning">Ajax</span>
                                     <span class="badge text-bg-warning">AWS</span>
-                                    
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -252,33 +264,38 @@
         <div class="below-navbar-body mt-5">
             <div class="profile" id="projects">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="p-1 shadow card-bg">
 
                         <div class="card-body">
                             <p class="h1 text-center">PROJECTS</p>
 
                             <div class="container w-100 mb-2 mt-4">
 
-                                
+
 
                                 <div class="d-flex flex-row flex-wrap justify-content-between mt-2"
                                     style="width: 100%;">
 
                                     <p class="h6">
-                                        <a href="https://github.com/tusharbudhwani/ML-project/">Optimizing Self-written Machine Learning Algorithms for Real-World Data Applications</a> 
+                                        <a href="https://github.com/tusharbudhwani/ML-project/">Optimizing Self-written
+                                            Machine Learning Algorithms for Real-World Data Applications</a>
                                     </p>
                                     <p class="text-end"> May 2024</p>
-                                    <ul class="text-black-50">
-                                        <li>Conducted a comparative analysis of self-written models (Neural Networks, Random Forests, and KNN) on 4 diverse datasets.</li>
-                                        <li>Designed and implemented multi-layer architectures with custom back propagation, activation functions (ReLU, Sigmoid), and
-                                            weight initialization, achieving up to 98.14% test accuracy on the Handwritten Digits dataset.</li>
-                                        <li>Executed comprehensive k-fold cross-validation on all models, ensuring robust generalization, reduced overfitting, and consistently
+                                    <ul class="">
+                                        <li>Conducted a comparative analysis of self-written models (Neural Networks,
+                                            Random Forests, and KNN) on 4 diverse datasets.</li>
+                                        <li>Designed and implemented multi-layer architectures with custom back
+                                            propagation, activation functions (ReLU, Sigmoid), and
+                                            weight initialization, achieving up to 98.14% test accuracy on the
+                                            Handwritten Digits dataset.</li>
+                                        <li>Executed comprehensive k-fold cross-validation on all models, ensuring
+                                            robust generalization, reduced overfitting, and consistently
                                             high accuracy and F1 scores.
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="text-black-50">
-                                    Technology: 
+                                <div class="">
+                                    Technology:
                                     <span class="badge text-bg-warning">Python</span>
                                     <span class="badge text-bg-warning">ML</span>
                                     <span class="badge text-bg-warning">Neural Networks</span>
@@ -294,22 +311,29 @@
                                     style="width: 100%;">
 
                                     <p class="h6">
-                                        <a href="https://drive.google.com/drive/folders/1Q8DHDj4rQxuuR2A4scv5xRPf1nnNQ-eb">Generative 3D Reconstruction from Single Image Analysis</a> 
+                                        <a
+                                            href="https://drive.google.com/drive/folders/1Q8DHDj4rQxuuR2A4scv5xRPf1nnNQ-eb">Generative
+                                            3D Reconstruction from Single Image Analysis</a>
                                     </p>
                                     <p class="text-end"> Apr 2024</p>
-                                    <ul class="text-black-50">
-                                        <li>Crafted a 3D reconstruction pipeline that generates high-fidelity 3D models from 2D images using depth estimation and OpenAI’s
-                                            CLIP (Contrastive Language-Image Pre-training) for semantic consistency.</li>
-                                        <li>Fine-tuned the model by freezing encoder layers and optimizing decoder layers, significantly improving visual quality of the 3D
-                                            reconstructions with efficient resource utilization.</li>
-                                        <li> Enhanced texture quality using multi-resolution triplane sampling, boosting performance with no extra computational cost.
+                                    <ul class="">
+                                        <li>Crafted a 3D reconstruction pipeline that generates high-fidelity 3D models
+                                            from 2D images using depth estimation and OpenAI’s
+                                            CLIP (Contrastive Language-Image Pre-training) for semantic consistency.
                                         </li>
-                                        <li>Decreased computation time and enhanced training efficiency by replacing the original L2 loss with a combination of L1 smooth
+                                        <li>Fine-tuned the model by freezing encoder layers and optimizing decoder
+                                            layers, significantly improving visual quality of the 3D
+                                            reconstructions with efficient resource utilization.</li>
+                                        <li> Enhanced texture quality using multi-resolution triplane sampling, boosting
+                                            performance with no extra computational cost.
+                                        </li>
+                                        <li>Decreased computation time and enhanced training efficiency by replacing the
+                                            original L2 loss with a combination of L1 smooth
                                             and cosine loss.</li>
                                     </ul>
                                 </div>
-                                <div class="text-black-50">
-                                    Technology: 
+                                <div class="">
+                                    Technology:
                                     <span class="badge text-bg-warning">Deep Learning</span>
                                     <span class="badge text-bg-warning">Python</span>
                                     <span class="badge text-bg-warning">Fine-tuning</span>
@@ -327,18 +351,21 @@
 
                                     <p class="h6">
                                         <a href="https://github.com/tusharbudhwani/Personalizing-LLMs">Personalizing
-                                            LLMs (Large Language Models) based on User Profile</a> 
+                                            LLMs (Large Language Models) based on User Profile</a>
                                     </p>
                                     <p class="text-end"> Dec 2023</p>
-                                    <ul class="text-black-50">
-                                        <li>Fine-tuned Google's FLAN T5-base model using user profile data and devised a pipeline to generate personalized prompts.</li>
-                                        <li>Formulated a query generation function using Lexical Augmentation, elevating accuracy by 44.7% with a 120% F1-score increase.</li>
-                                        <li>Optimized retrieval with a top-k article extraction method using BM25 retriever.
+                                    <ul class="">
+                                        <li>Fine-tuned Google's FLAN T5-base model using user profile data and devised a
+                                            pipeline to generate personalized prompts.</li>
+                                        <li>Formulated a query generation function using Lexical Augmentation, elevating
+                                            accuracy by 44.7% with a 120% F1-score increase.</li>
+                                        <li>Optimized retrieval with a top-k article extraction method using BM25
+                                            retriever.
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="text-black-50">
-                                    Technology: 
+                                <div class="">
+                                    Technology:
                                     <span class="badge text-bg-warning">Python</span>
                                     <span class="badge text-bg-warning">Deep Learning</span>
                                     <span class="badge text-bg-warning">LLM</span>
@@ -357,7 +384,7 @@
 
 
 
-                                
+
 
 
 
@@ -371,22 +398,26 @@
                                             Early Detection of Fatal Diseases</a>
                                     </p>
                                     <p class="text-end"> Feb 2023</p>
-                                    <ul class="text-black-50">
-                                        <li>Developed and evaluated multiple ML models (SVM, Random Forest, XGBoost, AdaBoost), using hyperparameter tuning and
-                                            k-fold cross-validation to identify the best-performing model for each disease.</li>
-                                        <li>Implemented preprocessing techniques such as feature engineering, SMOTE, and standardization, improving robustness and
+                                    <ul class="">
+                                        <li>Developed and evaluated multiple ML models (SVM, Random Forest, XGBoost,
+                                            AdaBoost), using hyperparameter tuning and
+                                            k-fold cross-validation to identify the best-performing model for each
+                                            disease.</li>
+                                        <li>Implemented preprocessing techniques such as feature engineering, SMOTE, and
+                                            standardization, improving robustness and
                                             boosting prediction accuracy of the models by up to 4%.</li>
                                         <li>Constructed a Stacking Ensemble model (Logistic Regression, KNN, Decision
                                             Trees) with a leading 91.3% accuracy in heart disease
                                             prediction among seven ML models.
                                         </li>
-                                        <li>Assembled a Stacking Ensemble model combining Logistic Regression, KNN, and Decision Trees, attaining 91.3% accuracy for
+                                        <li>Assembled a Stacking Ensemble model combining Logistic Regression, KNN, and
+                                            Decision Trees, attaining 91.3% accuracy for
                                             heart disease detection, outperforming individual models.</li>
                                     </ul>
 
                                 </div>
-                                <div class="text-black-50">
-                                    Technology: 
+                                <div class="">
+                                    Technology:
                                     <span class="badge text-bg-warning">Python</span>
                                     <span class="badge text-bg-warning">Machine Learning</span>
                                     <span class="badge text-bg-warning">Predictive Modeling</span>
@@ -417,15 +448,15 @@
                                             Application</a>
                                     </p>
                                     <p class="text-end"> Nov 2022</p>
-                                    <ul class="text-black-50">
+                                    <ul class="">
                                         <li>Created an intelligent food management app, leveraging Laravel and
                                             JavaScript, resulting in a 30% reduction in food waste.</li>
                                         <li>Implemented an algorithm that calculated meal options from available
                                             ingredients, leading to a 25% reduction in grocery spending.</li>
                                     </ul>
                                 </div>
-                                <div class="text-black-50">
-                                    Technology: 
+                                <div class="">
+                                    Technology:
                                     <span class="badge text-bg-warning">Laravel(PHP)</span>
                                     <span class="badge text-bg-warning">HTML/CSS</span>
                                     <span class="badge text-bg-warning">JavaScript</span>
@@ -445,10 +476,10 @@
 
                                     <p class="h6">
                                         <a href="https://github.com/avinashdengani/TSEC-Hacks-2022-SystemZombies">Social
-                                            Media platform for Researchers and Developers</a> 
+                                            Media platform for Researchers and Developers</a>
                                     </p>
                                     <p class="text-end"> Mar 2022</p>
-                                    <ul class="text-black-50">
+                                    <ul class="">
                                         <li>Developed a web application for programmers and researchers to efficiently
                                             collaborate and network.</li>
                                         <li>Engineered a recommendation system connecting users with relevant projects
@@ -468,8 +499,8 @@
                                     </ul>
 
                                 </div>
-                                <div class="text-black-50">
-                                    Technology: 
+                                <div class="">
+                                    Technology:
                                     <span class="badge text-bg-warning">Laravel(PHP)</span>
                                     <span class="badge text-bg-warning">HTML/CSS</span>
                                     <span class="badge text-bg-warning">JavaScript</span>
@@ -480,35 +511,6 @@
                                     <span class="badge text-bg-warning">GitHub API</span>
                                 </div>
                                 <hr>
-
-                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2"
-                                    style="width: 100%;">
-
-                                    <p class="h6">
-                                        <a href="https://github.com/tusharbudhwani/foodie">Intelligent Food Management
-                                            Application</a>
-                                    </p>
-                                    <p class="text-end"> Nov 2022</p>
-                                    <ul class="text-black-50">
-                                        <li>Created an intelligent food management app, leveraging Laravel and
-                                            JavaScript, resulting in a 30% reduction in food waste.</li>
-                                        <li>Implemented an algorithm that calculated meal options from available
-                                            ingredients, leading to a 25% reduction in grocery spending.</li>
-                                    </ul>
-                                </div>
-                                <div class="text-black-50">
-                                    Technology: 
-                                    <span class="badge text-bg-warning">Laravel(PHP)</span>
-                                    <span class="badge text-bg-warning">HTML/CSS</span>
-                                    <span class="badge text-bg-warning">JavaScript</span>
-                                    <span class="badge text-bg-warning">Bootstrap</span>
-                                    <span class="badge text-bg-warning">MySQL</span>
-                                    <span class="badge text-bg-warning">Git</span>
-                                    <span class="badge text-bg-warning">GitHub</span>
-                                    <span class="badge text-bg-warning">REST API</span>
-                                </div>
-                                <hr>
-                                
 
                             </div>
                         </div>
@@ -537,7 +539,7 @@
                                             Advanced Encryption Standard Algorithm to secure IoT devices. </a>
                                     </p>
                                     <p class="text-end"> Aug 2022</p>
-                                    <ul class="text-black-50">
+                                    <ul class="">
                                         <li> Indian Patent Application No. 202221045319 A, The Patent Office Journal No.
                                             33/2022, Date of filing: Aug 8, 2022</li>
                                         <li>Proposed a faster alternative to the AES algorithm for lower-powered IoT
@@ -554,7 +556,7 @@
                                             Application Security Framework </a> | ICETESM
                                     </p>
                                     <p class="text-end"> Feb 2022</p>
-                                    <ul class="text-black-50">
+                                    <ul class="">
                                         <li>Assembled a sophisticated scanning engine to detect various web app
                                             vulnerabilities, utilizing open-source tools for in-depth security analysis.
                                         </li>
@@ -565,16 +567,23 @@
 
                                     <p class="h6">
                                         Research Project:
-                                        <a href="https://www.ijaresm.com/uploaded_files/document_file/Harshada_khamkarAt9n.pdf">Enhancing Steering Accuracy in Self-Driving Cars Using Deep Learning </a> | IJARESM
+                                        <a
+                                            href="https://www.ijaresm.com/uploaded_files/document_file/Harshada_khamkarAt9n.pdf">Enhancing
+                                            Steering Accuracy in Self-Driving Cars Using Deep Learning </a> | IJARESM
                                     </p>
                                     <p class="text-end"> Feb 2022</p>
-                                    <ul class="text-black-50">
-                                        <li>Preprocessed 10,000+ images and addressed dataset bias by eliminating 30% of 0-degree steering angles, improving training
-                                            efficiency by 15% and boosting performance on curves and complex road structures by 20%.
+                                    <ul class="">
+                                        <li>Preprocessed 10,000+ images and addressed dataset bias by eliminating 30% of
+                                            0-degree steering angles, improving training
+                                            efficiency by 15% and boosting performance on curves and complex road
+                                            structures by 20%.
                                         </li>
-                                        <li>Devised a custom CNN with 5 convolutional, 4 dropout, and 4 dense layers, achieving training loss of 0.0343 and validation loss of
-                                            0.0275, enabling accurate steering predictions and improved generalization.</li>
-                                        <li>Minimized overfitting by applying 4 dropout layers in the CNN, reducing validation error by 25% and enhancing generalization.</li>
+                                        <li>Devised a custom CNN with 5 convolutional, 4 dropout, and 4 dense layers,
+                                            achieving training loss of 0.0343 and validation loss of
+                                            0.0275, enabling accurate steering predictions and improved generalization.
+                                        </li>
+                                        <li>Minimized overfitting by applying 4 dropout layers in the CNN, reducing
+                                            validation error by 25% and enhancing generalization.</li>
                                     </ul>
                                 </div>
 
@@ -589,7 +598,7 @@
         <div class="below-navbar-body mt-5">
             <div class="profile" id="extra">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="p-1 shadow card-bg">
 
                         <div class="card-body">
                             <p class="h1 text-center">LEADERSHIP / EXTRA-CURRICULAR ACTIVITIES</p>
@@ -604,7 +613,7 @@
                                     </p>
                                     <p class="text-end"> Sep 2021 - Jun 2022</p>
                                     <p>
-                                        <i class="text-black-50">- Organized over 80 community service events
+                                        <i class="">- Organized over 80 community service events
                                             including Blood Donation Drives, Cleanup Drives, etc.</i>
                                     </p>
                                 </div>
@@ -616,7 +625,7 @@
                                     </p>
                                     <p class="text-end">Aug 2021 - May 2022</p>
                                     <p>
-                                        <i class="m-0 text-black-50">- Volunteered at various Medical camps,
+                                        <i class="m-0 ">- Volunteered at various Medical camps,
                                             Fundraising, and charity events.</i>
                                     </p>
                                 </div>
@@ -678,7 +687,7 @@
         <div class="below-navbar-body mt-5 mb-5">
             <div class="profile" id="music">
                 <div class="my-content">
-                    <div class="card p-1 shadow card-bg">
+                    <div class="p-1 shadow card-bg">
 
                         <div class="card-body">
                             <p class="h1 text-center">MY MUSIC</p>
@@ -701,21 +710,35 @@
                                         </p>
                                     </div>
 
-                                    <iframe style="border-radius:12px; margin: auto; margin-top: 40px;" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" width="390" height="160" frameBorder="30" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/chaand-feat-tushar-budhwani/1743518327?i=1743518449"></iframe>
-                                        <iframe style="border-radius:12px; margin: auto; margin-top: 40px;" src="https://open.spotify.com/embed/artist/1GvvykZX16pGkIZTomxkgq?utm_source=generator" width="390" height="200" frameBorder="30" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                                    
+                                    <iframe style="border-radius:12px; margin: auto; margin-top: 40px;"
+                                        allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" width="390"
+                                        height="160" frameBorder="30"
+                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                                        src="https://embed.music.apple.com/us/album/chaand-feat-tushar-budhwani/1743518327?i=1743518449"></iframe>
+                                    <iframe style="border-radius:12px; margin: auto; margin-top: 40px;"
+                                        src="https://open.spotify.com/embed/artist/1GvvykZX16pGkIZTomxkgq?utm_source=generator"
+                                        width="390" height="200" frameBorder="30" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                        loading="lazy"></iframe>
+
                                 </div>
 
                                 <div id="carouselExampleRide" class="carousel carousel-dark slide" data-bs-ride="true"
                                     style="max-width: 600px; margin: auto;">
-                                    
+
                                     <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                      </div>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    </div>
 
                                     <div class="carousel-inner">
 
@@ -819,42 +842,57 @@
         </div>
     </div>
 
-    <nav class="navbar bg-dark justify-content-center bottombar" style="height: 150px;">
-
-
-        <div class="d-flex flex-row flex-wrap justify-content-evenly" id="contact">
-
-            <a href="https://github.com/tusharbudhwani"><i class="fa-brands fa-github brands"></i></a>
-            <a href="https://open.spotify.com/artist/1GvvykZX16pGkIZTomxkgq?si=EyG28drESvmP0wGdxLrmpQ"><i class="fa-brands fa-spotify brands"></i></a>
-            <a href="https://www.linkedin.com/in/tusharbudhwani/"><i class="fa-brands fa-linkedin-in brands"></i></a>
-            <a href="https://www.youtube.com/@entmusic_"><i class="fa-brands fa-youtube brands"></i></a>
-            <a href="https://www.instagram.com/tusharbudhwani/"><i class="fa-brands fa-instagram brands"></i></a>
-            <a href="https://music.apple.com/in/artist/tushar-budhwani/1743518448"><i class="fa-brands fa-apple brands"></i></a>
-
+    <footer class="bottombar">
+        <div class="container">
+            <div class="social-links" id="contact">
+                <a href="https://github.com/tusharbudhwani"><i class="fab fa-github"></i></a>
+                <a href="https://open.spotify.com/artist/1GvvykZX16pGkIZTomxkgq?si=EyG28drESvmP0wGdxLrmpQ"><i
+                        class="fab fa-spotify"></i></a>
+                <a href="https://www.linkedin.com/in/tusharbudhwani/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@entmusic_"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/tusharbudhwani/"><i class="fab fa-instagram"></i></a>
+                <a href="https://music.apple.com/in/artist/tushar-budhwani/1743518448"><i class="fab fa-apple"></i></a>
+                <a href="https://g.co/kgs/Rm9FQ4J"><i class="fab fa-google"></i></a>
+            </div>
         </div>
-    </nav>
+    </footer>
+
     </div>
     </div>
     <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
+       
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+        const modeToggle = document.getElementById('modeToggle');
+const body = document.body;
+const icon = modeToggle.querySelector('i');
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+modeToggle.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+  if (body.classList.contains('light-mode')) {
+    icon.classList.replace('fa-moon', 'fa-sun');
+  } else {
+    icon.classList.replace('fa-sun', 'fa-moon');
+  }
+});
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+// Smooth transition for scroll-to-top button
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.opacity = "1";
+    mybutton.style.visibility = "visible";
+  } else {
+    mybutton.style.opacity = "0";
+    mybutton.style.visibility = "hidden";
+  }
+};
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
         integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
