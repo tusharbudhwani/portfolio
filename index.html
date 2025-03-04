@@ -218,13 +218,19 @@
                                     style="width: 100%;">
 
                                     <p class="h6">
-                                        Graduate Student Researcher - GenAI | Adobe Inc. (with University of Massachusetts Amherst)
+                                        Graduate Researcher - GenAI | Adobe Inc. (with University of Massachusetts Amherst)
                                     </p>
                                     <p class="text-end"> Feb 2025 - Present</p>
                                     <ul class="">
-                                        <li>Designing and implementing LLM calibration methods to create domain-specific AI judges, reducing reliance on human feedback.
+                                        <li>Developing a hybrid evaluation approach that integrates LLM-generated critiques with regression models to overcome LLM
+                                            miscalibration and improve human alignment by 9%.
                                         </li>
-                                        <li>Developing novel estimators for assessing new GenAI models using historical feedback, revolutionizing AI evaluation processes.</li>
+                                        <li>Extracted token embeddings from the last hidden-layer of a transformer, capturing semantic features of LLM-generated critiques
+                                            for accurate human feedback prediction.</li>
+                                            <li>
+                                                Applied PCA to reduce critique embeddings from 512 to 50 dimensions and trained regressors to efficiently map embeddings to
+target scores, ensuring computational efficiency and scalability.
+                                            </li>
                                     </ul>
 
                                 </div>
@@ -251,25 +257,13 @@
                                     </p>
                                     <p class="text-end"> Aug 2021 - Jan 2022</p>
                                     <ul class="">
-                                        <li>Integrated RESTful APIs with external payroll services and benefits
-                                            providers as part of an HR automation project, significantly
-                                            improving data synchronization and reducing manual administrative tasks.
+                                        <li>Integrated REST APIs with external payroll services and benefits providers in an HR automation project, significantly improving
+                                            data synchronization and reducing the time required for manual administrative tasks by 15 hours.
                                         </li>
-                                        <li>Led development of a MERN based internal employee portal to create a dynamic
-                                            dashboard for HR and payroll data visualization.</li>
-                                        <li> Assisted in the migration of a legacy monolithic system to a containerized
-                                            microservices architecture using Docker and Kubernetes,
-                                            ensuring scalability for 2x projected traffic growth.</li>
-                                        <li>Implemented horizontal scaling via AWS ECS by configuring auto-scaling
-                                            policies and optimizing load balancing strategies,
-                                            enabling the platform to efficiently handle up to 1500 concurrent users with
-                                            minimal latency and high availability.</li>
-                                        <li>Architected an advanced permission and role-based access control (RBAC)
-                                            module, ensuring secure handling of sensitive employee
-                                            data and maintaining regulatory compliance.</li>
-                                        <li>Lowered cloud infrastructure costs by 20% through resource utilization
-                                            analysis, right-sizing EC2 instances, and configuring
-                                            auto-scaling policies, reducing wasteful AWS spending.</li>
+                                        <li>Developed a MERN-based internal employee portal with an adaptive dashboard for HR and payroll data visualization.</li>
+                                        <li> Migrated a legacy monolithic system to a containerized microservices architecture using Docker.</li>
+                                        <li>Crafted an advanced permission and role-based access control (RBAC) module, ensuring secure handling of sensitive employee data.</li>
+                                        
                                     </ul>
 
                                 </div>
@@ -353,7 +347,7 @@
 
 
 
-                                <div class="d-flex flex-row flex-wrap justify-content-between mt-2"
+                                <!-- <div class="d-flex flex-row flex-wrap justify-content-between mt-2"
                                     style="width: 100%;">
 
                                     <p class="h6">
@@ -388,7 +382,7 @@
                                     <span class="badge text-bg-warning">Inception Score</span>
                                     <span class="badge text-bg-warning"></span>
                                 </div>
-                                <hr>
+                                <hr> -->
 
 
 
@@ -401,13 +395,10 @@
                                     </p>
                                     <p class="text-end"> Dec 2023</p>
                                     <ul class="">
-                                        <li>Fine-tuned Google's FLAN T5-base model using user profile data and devised a
-                                            pipeline to generate personalized prompts.</li>
-                                        <li>Formulated a query generation function using Lexical Augmentation, elevating
-                                            accuracy by 44.7% with a 120% F1-score increase.</li>
-                                        <li>Optimized retrieval with a top-k article extraction method using BM25
-                                            retriever.
-                                        </li>
+                                        <li>Created a Retrieval-Augmented Generation (RAG) pipeline to personalize LLM outputs by integrating user profile data.</li>
+                                        <li>Engineered enhanced prompts by combining input queries, retrieved articles, and lexical augmentation techniques, improving the LLM's contextual understanding and alignment with user preferences by 14%.</li>
+                                        <li>Implemented a BM25 retriever to extract top-k (1,2,3) relevant articles from a user's profile.</li>
+                                        <li>Fine-tuned Google's FLAN-T5 model to predict article categories, boosting accuracy by 23%.</li>
                                     </ul>
                                 </div>
                                 <div class="">
@@ -441,7 +432,7 @@
 
                                     <p class="h6">
                                         <a href="https://github.com/tusharbudhwani/BE-Project">ML-Based Web Platform for
-                                            Early Detection of Fatal Diseases</a>
+                                            Disease Detection</a>
                                     </p>
                                     <p class="text-end"> Feb 2023</p>
                                     <ul class="">
@@ -495,10 +486,10 @@
                                     </p>
                                     <p class="text-end"> Nov 2022</p>
                                     <ul class="">
-                                        <li>Created an intelligent food management app, leveraging Laravel and
-                                            JavaScript, resulting in a 30% reduction in food waste.</li>
-                                        <li>Implemented an algorithm that calculated meal options from available
-                                            ingredients, leading to a 25% reduction in grocery spending.</li>
+                                        <li>Engineered a full-stack web app using Laravel(PHP) with individual modules for expiration tracking, recipes, inventory management, nutrition optimization, and notifications for items nearing expiration.</li>
+                                        <li>Created a responsive and visually engaging front-end interface using HTML5, CSS3, Bootstrap, and Sass, ensuring cross-device compatibility and an intuitive user experience.</li>
+                                        <li>Implemented a smart recipe recommendation engine using keyword-based matching against a API-based recipe dataset.</li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="">
@@ -513,7 +504,6 @@
                                     <span class="badge text-bg-warning">REST API</span>
                                 </div>
                                 <hr>
-
 
 
 
